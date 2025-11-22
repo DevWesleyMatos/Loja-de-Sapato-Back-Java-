@@ -1,4 +1,5 @@
 package com.example.LojaDeSapato.controller;
+
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.LojaDeSapato.model.Sapato;
@@ -6,7 +7,10 @@ import com.example.LojaDeSapato.repository.SapatoRepository;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "https://loja-de-sapato-back-java.onrender.com/sapatos")
+@CrossOrigin(origins = {
+        "https://lojadesapato-react.onrender.com",
+        "http://localhost:5173"
+})
 @RequestMapping("/sapatos")
 public class SapatoController {
 
