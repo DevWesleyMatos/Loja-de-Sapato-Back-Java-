@@ -8,8 +8,9 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = {
-        "https://devwesleymatos.github.io",
-        "http://localhost:5173"
+    "https://devwesleymatos.github.io",
+    "https://lojadesapato-react.onrender.com",
+    "http://localhost:5173"
 })
 @RequestMapping("/sapatos")
 public class SapatoController {
